@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhruv Thingalaya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- PROFILE SECTION -->
+      <section class="bright" id="profile">
+        <h2 class="section-heading" onclick="toggleContent('profileContent')">
+          WHO AM I?
+        </h2>
+        <div class="content" id="profileContent">
+          <div class="section__pic-container">
+            <img
+              src="./assets/profile-pic.png"
+              alt="Dhruv Thingalaya Profile Picture"
+            />
+          </div>
+          <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">DHRUV THINGALAYA</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+              <button
+                onclick="window.open('./assets/resume-example.pdf', '_blank')"
+                class="secondary btn"
+              >
+                Download CV
+              </button>
+              <button onclick="location.href='./#contact'" class="primary btn">
+                Contact Info
+              </button>
+            </div>
+            <div id="socials-container">
+              <img
+                src="./assets/github.png"
+                alt="My Github Profile"
+                class="icon"
+                onclick="window.open('https://github.com/dhruvthingalaya', '_blank')"
+              />
+              <img
+                src="./assets/linkedin.png"
+                alt="My linkedin Profile"
+                class="icon"
+                onclick="window.open('https://linkedin.com/', '_blank')"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="dark" id="project">
+        <h2 class="section-heading" onclick="toggleContent('projectContent')">
+          PROJECTS
+        </h2>
+        <div class="content" id="projectContent">
+          <div class="project__wrapper">
+            <div class="project">
+              <img src="./assets/project-1.png" alt="Project 1" />
+              <div class="project__btn-container">
+                <button
+                  class="secondary btn"
+                  onclick="window.open('https://example.com', '_blank')"
+                >
+                  Live Demo
+                </button>
+                <button
+                  class="primary btn"
+                  onclick="window.open('https://github.com', '_blank')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./assets/project-2.png" alt="Project 2" />
+              <div class="project__btn-container">
+                <button
+                  class="secondary btn"
+                  onclick="window.open('https://example.com', '_blank')"
+                >
+                  Live Demo
+                </button>
+                <button
+                  class="primary btn"
+                  onclick="window.open('https://github.com', '_blank')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./assets/project-3.png" alt="Project 3" />
+              <div class="project__btn-container">
+                <button
+                  class="secondary btn"
+                  onclick="window.open('https://example.com', '_blank')"
+                >
+                  Live Demo
+                </button>
+                <button
+                  class="primary btn"
+                  onclick="window.open('https://github.com', '_blank')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="bright" id="about">
+        <h2 class="section-heading" onclick="toggleContent('aboutContent')">
+          ABOUT ME
+        </h2>
+        <div class="content" id="aboutContent">
+          <div class="about__img-wrapper">
+            <img
+              src="./assets/about-pic.png"
+              alt="Dhruv Thingalaya About Picture"
+            />
+          </div>
+          <div class="about__text-wrapper">
+            <div class="qualifications-wrapper">
+              <div class="qualification">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <h5>Experience</h5>
+                <p class="section__text__p1">Proficient in Front-End</p>
+                <p class="section__text__p1">Collaborative & Team-Ready</p>
+              </div>
+              <div class="qualification">
+                <img
+                  src="./assets/education.png"
+                  alt="Education Icon"
+                  class="icon"
+                />
+                <h5>Education</h5>
+                <p class="section__text__p1">High School Diploma</p>
+                <p class="section__text__p1">Self-Taught Developer</p>
+              </div>
+            </div>
+            <p>
+              I'm a front-end developer passionate about building clean,
+              functional, and visually appealing websites. With no prior
+              experience, I'm a fast learner, adaptable, and easy to train. I
+              quickly pick up new tools and thrive in remote teams. My goal is
+              to grow, contribute, and make a meaningful impact.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section class="dark" id="experience">
+        <h2
+          class="section-heading"
+          onclick="toggleContent('experienceContent')"
+        >
+          EXPERIENCE
+        </h2>
+        <div class="content" id="experienceContent">
+          <div class="experience__wrappers-container">
+            <div class="experience__wrappers">
+              <h3>Frontend Development</h3>
+              <div class="experience__grids">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>HTML</h5>
+                    <p class="section__text__p1">Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>SASS</h5>
+                    <p class="section__text__p1">Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>TypeScript</h5>
+                    <p class="section__text__p1">Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>CSS</h5>
+                    <p class="section__text__p1">Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>JavaScript</h5>
+                    <p class="section__text__p1">Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>Material UI</h5>
+                    <p class="section__text__p1">Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="experience__wrappers">
+              <h3>Backend Development</h3>
+              <div class="experience__grids">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>PostgreSQL</h5>
+                    <p class="section__text__p1">Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>Express JS</h5>
+                    <p class="section__text__p1">Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>Node JS</h5>
+                    <p class="section__text__p1">Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience Icon"
+                    class="icon"
+                  />
+                  <div class="experience__texts">
+                    <h5>Git</h5>
+                    <p class="section__text__p1">Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="bright" id="contact">
+        <h2 class="section-heading" onclick="toggleContent('contactContent')">
+          CONTACT
+        </h2>
+        <div class="content" id="contactContent">
+          <div class="contact__details-container">
+            <h2>
+              <a href="mailto:dhruv@influvise.com">dhruv@influvise.com</a>
+            </h2>
+            <div id="socials-container">
+              <img
+                src="./assets/github.png"
+                alt="My Github Profile"
+                onclick="window.open('https://github.com/dhruvthingalaya' , '_blank')"
+                class="icon"
+              />
+              <img
+                src="./assets/linkedin.png"
+                alt="MY Linked Profile"
+                onclick="window.open('https://linkedin.com/' , '_blank')"
+                class="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

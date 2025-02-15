@@ -1,0 +1,543 @@
+:root {
+  --debug: rgba(0, 0, 0, 0.3);
+
+  --text: #0d0d0d;
+  --background: #f7f7f7;
+  --primary: #000000;
+  --secondary: #595959;
+  --accent: #c2001d;
+
+  --debug: rgba(0, 0, 0, 0.3);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Space%20Grotesk:700|Inter:400");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+  font-size: 3.053rem;
+  /* 48.8px */
+}
+
+h2 {
+  font-size: 2.442rem;
+  /* 39.04px */
+}
+
+h3 {
+  font-size: 1.954rem;
+  /* 31.2px */
+}
+
+h4 {
+  font-size: 1.563rem;
+  /* 24.96px */
+}
+
+h5 {
+  font-size: 1.25rem;
+  /* 20px */
+}
+
+small {
+  font-size: 0.8rem;
+  /* 12.8px */
+}
+
+/* DEFAULTS */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari, and newer Edge */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+  border-radius: 1rem;
+  filter: grayscale(10);
+}
+
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+/* SECTION */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* max-width: 1200; */
+  scroll-snap-align: start;
+  /* gap: 2rem; */
+}
+
+/* SECTION HEADNG */
+
+.section-heading {
+  opacity: 0.2;
+  text-align: center;
+  font-size: 5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-heading:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* CONTENT */
+
+.content {
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 20px;
+  margin-top: 0px;
+  width: 80%;
+}
+
+/* SHOW CONTENT */
+
+.show-content {
+  opacity: 1 !important;
+  max-height: 500px !important;
+  max-width: 1200px;
+  margin-top: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+/* BACKGROUND THEME */
+
+.bright {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.dark {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+/* PROFILE SECTION */
+
+#profileContent {
+  display: flex;
+  flex-direction: row;
+}
+.section__pic-container {
+  display: flex;
+  max-height: 400px;
+  max-width: 400px;
+  margin: auto 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.section__pic-container img {
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.section__pic-container img:hover {
+  filter: grayscale(0);
+  border-radius: 50%;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  transform: translateY(-3px); /* Slight lift */
+  transition: all 0.3s ease-in-out;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  color: var(--secondary);
+  text-align: center;
+}
+
+.section__text__p2 {
+  color: var(--secondary);
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICON */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  transition: all 300ms ease;
+}
+
+.icon:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  transform: translateY(-3px); /* Slight lift */
+}
+
+/* BUTTON */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.primary,
+.secondary {
+  border: var(--primary) 0.1rem solid;
+}
+
+.primary:hover,
+.secondary:hover {
+  cursor: pointer;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  transform: translateY(-3px); /* Slight lift */
+}
+
+.primary,
+.secondary:hover {
+  background: var(--primary);
+  color: var(--background);
+}
+
+.primary:hover {
+  background: var(--primary);
+}
+
+.secondary {
+  background: none;
+}
+
+.secondary:hover {
+  border: var(--primary) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* PROJECTS SECTION */
+
+#projectContent {
+  height: 80vh;
+  width: 100vw;
+}
+
+.project__wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  padding: 10px; /* Optional: Space to avoid scrollbar overlap */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.project__wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.project__wrapper {
+  scrollbar-width: none;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  max-height: 90%;
+  width: fit-content;
+  padding: 20px;
+  background-color: var(--background);
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  scroll-snap-align: center;
+  flex-shrink: 0; /* Ensures projects don't shrink */
+}
+
+.project:hover {
+  opacity: 1;
+  transform: translateY(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.project img {
+  object-fit: cover;
+  border-radius: 1rem;
+  aspect-ratio: 1/1;
+  max-width: 300px;
+  max-height: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project:hover > img {
+  filter: grayscale(0);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  transform: scale(1.01); /* Slight lift */
+  transition: all 0.3s ease-in-out;
+}
+
+.project__btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#aboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about__img-wrapper img {
+  width: 400px;
+  height: 400px;
+}
+
+.about__img-wrapper img {
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__img-wrapper img:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  transform: translateY(-3px); /* Slight lift */
+  transition: all 0.3s ease-in-out;
+}
+
+.about__text-wrapper {
+  display: flex;
+  margin: auto 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualifications-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.qualification {
+  width: 100%;
+  border: rgba(0, 0, 0, 0.3) 1px solid;
+  border-radius: 1rem;
+  gap: 5px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.qualification:hover {
+  border: none;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
+  transform: translateY(-3px); /* Slight lift */
+  transition: all 0.3s ease-in-out;
+}
+
+.qualification .icon:hover {
+  box-shadow: none;
+  transform: none;
+  cursor: default;
+}
+
+/* EXPERIENCE SECTION */
+
+#experienceContent {
+  width: 100vw;
+  height: 80vh;
+}
+
+.experience__wrappers-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+  padding: 10px; /* Optional: Space to avoid scrollbar overlap */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.experience__wrappers-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.experience__wrappers-container {
+  scrollbar-width: none;
+}
+
+.experience__wrappers {
+  border-radius: 2rem;
+  border: var(--secondary) 1px solid;
+  padding: 2rem;
+  display: flex;
+  opacity: 0.3;
+  height: 100%;
+  width: 50%;
+  min-width: 450px;
+  flex-direction: column;
+  scroll-snap-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.experience__wrappers:hover {
+  opacity: 1;
+  transform: scale(1.025) translateY(-3px);
+  transition: all 0.3s ease-in-out;
+}
+
+.experience__wrappers h3 {
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.experience__grids {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  width: 10rem;
+  text-align: initial;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+article img {
+  height: 100px;
+  width: 100px;
+  filter: invert(1);
+}
+
+article .icon:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.experience__texts h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.experience__texts p {
+  text-align: left;
+}
+
+/* CONTACT SECTION */
+
+.contact__details-container {
+  border: var(--secondary) 1px solid;
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+}
+.contact__details-container h2 {
+  margin-bottom: 2rem;
+}
+
+.contact__details-container h2 a {
+  text-decoration: none;
+  color: var(--text);
+}
