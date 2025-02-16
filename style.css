@@ -100,6 +100,18 @@ img {
   width: 2.5rem;
 }
 
+.scroll {
+  display: none;
+  opacity: 0.05;
+  height: 2.5rem;
+  width: 2.5rem;
+  filter: invert(1);
+  rotate: -90deg;
+  position: absolute;
+  top: 95%;
+  right: 2rem;
+}
+
 /* SECTION */
 
 section {
@@ -293,8 +305,14 @@ section {
 /* PROJECTS SECTION */
 
 #projectContent {
+  position: relative;
+  overflow: visible;
   height: 80vh;
   width: 100vw;
+}
+
+#projectContent .scroll {
+  display: flex;
 }
 
 .project__wrapper {
@@ -303,6 +321,7 @@ section {
   display: flex;
   align-items: center;
   gap: 2.5rem;
+
   overflow-x: auto; /* Enable horizontal scrolling */
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
@@ -437,6 +456,8 @@ section {
 /* EXPERIENCE SECTION */
 
 #experienceContent {
+  position: relative;
+  overflow: visible;
   width: 100vw;
   height: 80vh;
 }

@@ -1,8 +1,3 @@
-/* Desktop (1024px and above) */
-@media screen and (max-width: 1440px) {
-  /* Styles for desktop */
-}
-
 /* Tablet (Between 768px and 1023px) */
 @media screen and (max-width: 1023px) {
   /* Styles for tablet */
@@ -30,6 +25,11 @@
 
   .section-heading {
     font-size: 4rem;
+  }
+
+  .scroll {
+    display: flex;
+    bottom: 0.5rem;
   }
 
   /* PROFILE SECTION */
@@ -145,6 +145,10 @@
 
   .section-heading {
     font-size: 3rem;
+  }
+
+  .scroll {
+    bottom: 1rem;
   }
 
   /* PROFILE SECTION */
