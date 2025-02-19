@@ -136,8 +136,13 @@ section {
 }
 
 .section-heading:hover {
+user-select:none;
   opacity: 1;
   transform: scale(1.1);
+}
+
+.section-heading:active {
+  user-select: none;
 }
 
 /* CONTENT */
