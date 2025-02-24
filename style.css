@@ -367,7 +367,7 @@ section {
 }
 
 .project img {
-  filter: grayscale(0);
+  filter: none;
   object-fit: cover;
   border-radius: 1rem;
   aspect-ratio: 1/1;
