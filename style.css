@@ -136,7 +136,7 @@ section {
 }
 
 .section-heading:hover {
-user-select:none;
+  user-select: none;
   opacity: 1;
   transform: scale(1.1);
 }
@@ -367,6 +367,7 @@ user-select:none;
 }
 
 .project img {
+  filter: grayscale(0);
   object-fit: cover;
   border-radius: 1rem;
   aspect-ratio: 1/1;
@@ -376,7 +377,6 @@ user-select:none;
 }
 
 .project:hover > img {
-  filter: grayscale(0);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Soft shadow */
   transform: scale(1.01); /* Slight lift */
   transition: all 0.3s ease-in-out;
