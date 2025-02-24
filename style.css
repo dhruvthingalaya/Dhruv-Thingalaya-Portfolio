@@ -354,7 +354,6 @@ section {
   width: fit-content;
   padding: 20px;
   background-color: var(--background);
-  opacity: 0.8;
   transition: all 0.3s ease-in-out;
   scroll-snap-align: center;
   flex-shrink: 0; /* Ensures projects don't shrink */
@@ -366,7 +365,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.project img {
+.project__img {
   filter: none;
   object-fit: cover;
   border-radius: 1rem;
